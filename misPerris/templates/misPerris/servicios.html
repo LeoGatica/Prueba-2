@@ -1,0 +1,201 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="{% static 'css/misestilos.css' %}">
+	  <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+	  <link rel="stylesheet" href = "{% static 'css/fonts.css' %}">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+	
+		<div class = "social-bar">
+			<a href = "https://www.facebook.com/groups/254341884745330/" class = "icon icon-facebook" target="_blank"></a>
+			<a href = "https://plus.google.com/communities/114674295027208879308?hl=es" class = "icon icon-google-plus" target="_blank"></a>
+			<a href = "https://www.instagram.com/adoptaaunperritochile/" class = "icon icon-instagram" target="_blank"></a>
+			<a href = "https://www.google.com/gmail/" class = "icon icon-envelop" target="_blank"></a>	
+		</div>
+	
+		<header>
+			<div class = "navbar-fixed">
+				<nav class = "#80cbc4 teal lighten-3">
+					<div class="nav-wrapper">
+						<a href = "#" class = "brand-logo"> <img src="{% static 'img/logo.png' %}"> </a>
+						<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="Principal">Inicio</a></li>
+							<li><a href="somos">Quienes Somos</a></li>
+							<li><a href="servicios">Servicios</a></li>
+							<li><a href="contactanos">Contactanos</a></li>				
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<ul class = "sidenav" id = "mobile-demo">
+				<li><a href="Principal">Inicio</a></li>
+						<li><a href="somos">Quienes Somos</a></li>
+						<li><a href="servicios">Servicios</a></li>
+						<li><a href="contactanos">Contactanos</a></li>
+				
+			</ul>
+
+		</header>
+		
+		
+		
+		<div class = "#00bfa5 teal accent-4 ">
+			
+				<div class = "fullscreen">
+					    <div class = "slider">
+							<ul class = "slides">
+								<li>
+								 <img src = "{% static 'img/perro1.jpg' %}" alt = "">
+									 <div class = "caption center-align">
+										<h3> Salvamos Animales</h3>
+										<h5 class = "light"> No puedes comprar amor, pero puedes adoptarlo </h5>
+									 </div>
+								</li>
+								
+								<li>
+								 <img src = "{% static 'img/perro2.jpg' %}" alt = "">
+									 <div class = "caption right-align">
+										<h3> Alexa </h3>
+										<h5 class = "light">"Cada vez que veía uno deambulando por las calles lo recogía"</h5>
+									 </div>
+								</li>
+								
+								<li>
+								 <img src = "{% static 'img/perro3.jpg' %}" alt = "">
+									 <div class = "caption left-align">
+										<h3> Pedro </h3>
+										<h5 class = "light"> "Es increíble y nos llena el corazón"</h5>
+									 </div>
+								</li>
+
+								<li>
+								 <img src = "{% static 'img/perro4.jpg' %}" alt = "">
+									 <div class = "caption right-align">
+										<h3> Marta </h3>
+										<h5 class = "light">"A partir de ese momento me di cuenta de la gran problemática que existe con los perros maltratados"</h5>
+									 </div>
+								</li>
+							</ul>
+						</div>
+				</div>
+		</div>
+		<br>
+		<br>
+		<main>
+			{% block content %}
+			{% endblock %}
+		</main>	
+		
+		<div>
+			<div class = "container section">
+				<div class = "row">
+					<div class = "col s10">
+						<div class= "section">
+							<h3>¿Cómo podemos ayudarte?</h3>
+							<p> El apoyo que podamos ofrecerte dependerá de la situación del perro o gato necesitado. En los casos de maltrato, deberás escribir a maltrato@misperris.cl. 
+							La encargada de esta área te asesorará en cuanto a cómo proceder dependiendo de la situación del animal. Cuando hayas rescatado a un perro o gato y hayas decidido hacerte cargo de él, es decir vacunarlo, 
+							desparasitarlo, esterilizarlo y albergarlo temporalmente, te podemos ayudar con mucho gusto a difundirlo para encontrarle un hogar adoptivo. En estos casos, deberás comprometerte
+							a darle seguimiento a los posibles adoptantes que te enviemos y a avisarnos de inmediato si encuentras un adoptante antes que nosotros. Cuando nos reportes a un animalito abandonado, 
+							tendrás que comprometerte con él de alguna manera para que podamos apoyarte. Los perros y gatos abandonados y maltratados son muchos y sólo entre todos podremos ayudarlos y comenzar a solucionar el problema.
+							Son muchas las formas en que puedes colaborar: puedes alojar al animalito o pagarle una pensión por agunos días mientras encontramos un hogar temporal para él; puedes pagar sus gastos veterinarios, cuando ello
+							se requiera; puedes pagar su vacunación, desparasitación y esterilización (hay lugares donde esterilizan a los animales de manera gratuita o a muy bajo costo); puedes ayudarnos con el transporte a su hogar temporal 
+							y, posteriormente, a su hogar definitivo. Ahora bien, si tienes las ganas de hacerte cargo del perro o gato que hayas encontrado hasta que le encontremos un hogar definitivo, nosotros te asesoramos en cuanto a cómo hacerlo,
+							te recomendamos lugares para llevarlo a esterilizar, así como doctores que no te cobrarán tanto por vacunas y desparasitación. Créelo, nunca te arrepentirás de haber ayudado a un animal. 
+							Por el contrario, te sentirás muy bien y, quizás, te darán ganas de seguir ayudando a otros animales que lo necesiten. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+				
+		
+		
+		<div class = "#00bfa5 teal accent-4 ">
+			<div class = "container section">
+				<div class = "row ">
+					<div class = "col s12">
+						<div class = "col s4">
+							<img src = "{% static 'img/adopcion1.jpg' %}" alt = "" class = "materialboxed responsive-img"
+							data-caption = "Nombre: Pepa. Una bella perrita de 3 meses de edad y tamaño pequeño. Me llevo bien con perritos y humanos de todas las edades.">
+						</div>
+
+						<div class = "col s4">
+							<img src = "{% static 'img/adopcion2.jpg' %}" alt = "" class = "materialboxed responsive-img"
+							data-caption = "Nombre: Daniel. Con 7 añitos, mantiene una personalidad alegre y juvenil, al mismo tiempo que es dócil y amistoso.">
+						</div>
+						
+						<div class = "col s4">
+							<img src = "{% static 'img/adopcion3.jpg' %}" alt = "" class = "materialboxed responsive-img"
+							data-caption = "Nombre: Pilar. Es bien tímida, pero con el tiempo se da super bien, es sociable con otros perros.">
+						</div>
+						<div class = "col s4">
+							<img src = "{% static 'img/adopcion4.jpg' %}" alt = "" class = "materialboxed responsive-img"
+							data-caption = "Nombre : Pepe. muy agresivo, enemigo natural del humano.">
+						</div>
+	
+						<div class = "col s4">
+							<img src = "{% static 'img/adopcion7.jpg' %}" alt = "" class = "materialboxed responsive-img"
+							data-caption = "Nombre: Leonardo. es muy agradecido, amoroso y un poco tímido al principio pero luego se entrega totalmente.">
+						</div>
+
+						<div class = "col s4">
+							<img src = "{% static 'img/adopcion8.jpg' %}" alt = "" class = "materialboxed responsive-img"
+							data-caption = "Nombre: Toña. disfruta salir a pasear, llena tu vida con el amor más leal que puedas encontrar.">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+      <!--JavaScript at end of body for optimized loading-->
+	  <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+	  <script >document.addEventListener('DOMContentLoaded', function() {
+		  var elems = document.querySelectorAll('.slider');
+		  var instances = M.Slider.init(elems, {
+		  indicators : false,
+		  interval : 3000,
+		  duration : 300
+		  });
+		  }); 
+	  </script>
+		
+	  <script>
+			document.addEventListener('DOMContentLoaded', function() {
+		  var elems = document.querySelectorAll('.materialboxed');
+		  var instances = M.Materialbox.init(elems);
+		  });
+	  </script>
+	  <script>
+			document.addEventListener('DOMContentLoaded', function() {
+		  var elems = document.querySelectorAll('.sidenav');
+		  var instances = M.Sidenav.init(elems);
+		  });
+	  </script>
+		
+	  <script>
+			document.addEventListener('DOMContentLoaded', function() {
+		  var elems = document.querySelectorAll('.modal');
+		  var instances = M.Modal.init(elems, {dismissible : true});
+		   });
+	  </script>
+	  
+	  
+    </body>
+	
+	
+	<footer class = "#bdbdbd grey lighten-1 ">	
+		<BR>
+		Desarrollo Web y Mobile
+		<BR>
+	  </footer>
+  </html>

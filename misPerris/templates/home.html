@@ -1,0 +1,14 @@
+{% extends 'misPerris/Principal.html' %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hola {{ user.username }} 
+  <p><a href="{% url 'logout' %}">Cerrar Sesión</a></p>
+{% else %}
+  <p>No estás logeado :(</p>
+  <a href="{% url 'login' %}">Entra</a>
+{% endif %}
+{% endblock %}
